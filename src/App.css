@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+}
+
+/*SMALL*/
+@media only screen and (max-width: 768px) {
+    .App-header {
+        justify-content: center;
+        height: 60px;
+    }
+
+    .btn-signup {
+        margin: 0;
+    }
+
+    .App-link {
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .homepage-img {
+        height: 100vh;
+    }
+
+    .homepage-title {
+        font-size: 38px;
+    }
+
+    .homepage-img-content {
+        width: 90%;
+    }
+
+    .homepage-text {
+        font-size: 20px;
+    }
+
+
+    .homepage-opendeals {
+        padding: 0 40px;
+    }
+
+    .homepage-opendeals-card-content-description p {
+        margin: 5px 5px;
+    }
+
+    .homepage-opendeals-card-content-title {
+        margin: 5px;
+    }
+
+    .loginpage {
+        flex-direction: column-reverse;
+    }
+
+
+    .loginpage-img-container {
+        top: 50px;
+    }
+
+    .loginpage-img {
+        height: 100%;
+    }
+
+    .loginpage-form {
+        width: 70%;
+    }
+
+    .loginpage-form-container {
+        margin: 25% 0 0 0;
+    }
+
+}
+
+/*LARGE*/
+@media only screen and (min-width: 769px) {
+    .App-header {
+        justify-content: flex-end;
+        height: 80px;
+    }
+
+    .btn-signup {
+        margin-right: 80px;
+    }
+
+    .App-link {
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .homepage-img {
+        width: 100vw;
+    }
+
+    .homepage-title {
+        font-size: 64px;
+    }
+
+    .homepage-img-content {
+        width: 100%;
+    }
+
+    .homepage-text {
+        font-size: 24px;
+    }
+
+    .homepage-opendeals {
+        padding: 0 70px;
+    }
+
+    .homepage-opendeals-card-content-description p {
+        margin: 5px 0;
+    }
+
+    .homepage-opendeals-card-content-title {
+        margin: 0;
+    }
+
+    .loginpage {
+        flex-direction: row;
+    }
+
+    .loginpage-img {
+        height: 100%;
+    }
+
+    .loginpage-form {
+        width: 350px;
+
+    }
+
+    .loginpage-form-container {
+        margin: 0 100px;
+    }
+
+    .loginpage-img-container {
+        top: 80px;
+        width: 890px;
+        height: 943px;
+    }
+}
+
+/*general*/
+/* Header component */
+.App {
+    text-align: center;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    background-color: #172234;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.App-link {
+    text-decoration: none;
+}
+
+.btn {
+    width: 160px;
+    height: 44px;
+    border-radius: 5px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #B29F7E;
+}
+
+.btn-login {
+    color: #B29F7E;
+    background-color: transparent;
+}
+
+.btn-signup {
+    color: white;
+    background-color: #B29F7E;
+}
+
+/* HomePage component */
+.homepage {
+    position: relative;
+    text-align: center;
+}
+
+.homepage-img-container {
+    background-color: #172234;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.homepage-img {
+    opacity: 60%;
+}
+
+.homepage-img-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homepage-title {
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 0;
+}
+
+.homepage-text {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    margin: 10px 0 30px 0;
+}
+
+.homepage-btn {
+    width: 160px;
+    height: 54px;
+    border: 1px solid #B29F7E;
+    border-radius: 8px;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.homepage-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.homepage-opendeals-title {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    color: #B29F7E;
+    margin: 0 0 0 10px;
+    padding-top: 50px;
+}
+
+.homepage-opendeals-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.homepage-opendeals-card {
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 630px;
+    height: 400px;
+    position: relative;
+}
+
+.homepage-opendeals-card-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    position: absolute;
+    color: white;
+}
+
+.homepage-opendeals-card-content-title {
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+}
+
+.homepage-opendeals-card-content-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-opendeals-card-content-description div {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-opendeals-card-content-description p {
+    font-family: "Lato", sans-serif;
+    width: calc(100% / 3);
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 0;
+}
+
+
+/* LogInPage component */
+.loginpage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.loginpage-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loginpage-img {
+    height: 100%;
+}
+
+.loginpage-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginpage-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginpage-input-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 10px 0;
+
+}
+
+.loginpage-form-title {
+    margin: 0 0 10px 0;
+}
+
+.loginpage-input-title {
+    margin: 0 0 3px 0;
+}
+
+.loginpage-input {
+    height: 48px;
+    border-radius: 5px;
+    border: 2px solid #E0E0E0;
+    background-color: #E0E0E0;
+    color: #172234;
+    padding: 0 20px;
+}
+
+.loginpage-link {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: end;
+    margin: 0;
+}
+
+.loginpage-link a {
+    color: #B29F7E;
+    text-decoration: none;
+}
+
+.loginpage-submit {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    width: auto;
+    height: 44px;
+    margin: 30px 0 10px 0;
+    border-radius: 5px;
+    border: 2px solid #B29F7E;
+    background-color: #B29F7E;
+    color: white;
+}
+
+.loginpage-signup {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: black;
+    margin: 0;
+
+}
+
+.loginpage-signup a {
+    color: #B29F7E;
+    text-decoration: none;
+}
+
+
+
+
