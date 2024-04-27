@@ -1,7 +1,7 @@
 import axios from "axios";
-import {baseURL} from "../configs/urls";
+// import {baseURL} from "../configs/urls";
 
-// const baseURL = process.env.NODE_ENV === "production" ? prodURL : devURL;
+const baseURL = process.env.REACT_APP_API_URL
 
 
 const axiosService = axios.create({baseURL})
